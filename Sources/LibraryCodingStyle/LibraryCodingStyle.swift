@@ -1,7 +1,3 @@
-//struct LibraryCodingStyle {
-//    var text = "Hello, World!"
-//}
-
 import SwiftUI
 
 @frozen @propertyWrapper public class LibraryCodingStyle {
