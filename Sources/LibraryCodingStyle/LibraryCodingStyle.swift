@@ -17,6 +17,7 @@ import SwiftUI
         self.styleCase = styleCase
     }
     
+    
     private func set(_ newValue: String) {
         var wordsArray = newValue.split(whereSeparator: {$0 == " "}).map({String($0).lowercased()})
         var resultingString = ""
