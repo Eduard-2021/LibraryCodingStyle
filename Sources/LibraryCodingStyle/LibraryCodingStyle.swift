@@ -4,8 +4,7 @@
 
 import SwiftUI
 
-@propertyWrapper
-open class LibraryCodingStyle {
+@frozen @propertyWrapper public class LibraryCodingStyle {
     private var styleCase: StyleСases
     private var decodingString = ""
     public var wrappedValue: String {
@@ -17,7 +16,7 @@ open class LibraryCodingStyle {
         }
     }
     
-    init(wrappedValue: String, styleCase: StyleСases) {
+    public init(wrappedValue: String, styleCase: StyleСases) {
         self.decodingString = wrappedValue
         self.styleCase = styleCase
     }
